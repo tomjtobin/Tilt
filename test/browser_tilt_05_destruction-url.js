@@ -19,7 +19,7 @@ function test() {
       onTiltOpen: function()
       {
         Services.obs.addObserver(cleanup, DESTROYED, false);
-        InspectorUI.closeInspectorUI();
+        window.content.location = "about:mozilla";
       }
     });
   });
